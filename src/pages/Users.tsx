@@ -1,0 +1,1 @@
+import ResourceManager from '../components/ResourceManager'; import { userConfig } from '../data/resourceConfigs'; export default function Users(){return <ResourceManager {...userConfig} basePath="/users"/>}

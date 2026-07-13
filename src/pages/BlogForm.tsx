@@ -1,0 +1,1 @@
+import ResourceForm from '../components/ResourceForm'; import { blogConfig } from '../data/resourceConfigs'; export default function BlogForm(){return <ResourceForm config={blogConfig} basePath="/blogs"/>}

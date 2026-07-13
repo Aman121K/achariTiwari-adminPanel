@@ -1,0 +1,1 @@
+import ResourceManager from '../components/ResourceManager'; import { productConfig } from '../data/resourceConfigs'; export default function Products(){return <ResourceManager {...productConfig} basePath="/products"/>}

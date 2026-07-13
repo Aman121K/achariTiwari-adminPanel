@@ -1,0 +1,1 @@
+import ResourceForm from '../components/ResourceForm'; import { discountConfig } from '../data/resourceConfigs'; export default function DiscountForm(){return <ResourceForm config={discountConfig} basePath="/discounts"/>}

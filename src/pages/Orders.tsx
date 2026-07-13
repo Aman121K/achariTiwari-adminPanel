@@ -1,0 +1,1 @@
+import ResourceManager from '../components/ResourceManager'; import { orderConfig } from '../data/resourceConfigs'; export default function Orders(){return <ResourceManager {...orderConfig} basePath="/orders"/>}

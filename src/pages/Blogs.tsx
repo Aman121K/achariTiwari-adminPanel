@@ -1,0 +1,1 @@
+import ResourceManager from '../components/ResourceManager'; import { blogConfig } from '../data/resourceConfigs'; export default function Blogs(){return <ResourceManager {...blogConfig} basePath="/blogs"/>}

@@ -1,0 +1,1 @@
+import ResourceManager from '../components/ResourceManager'; import { discountConfig } from '../data/resourceConfigs'; export default function Discounts(){return <ResourceManager {...discountConfig} basePath="/discounts"/>}

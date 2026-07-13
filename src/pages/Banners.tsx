@@ -1,0 +1,1 @@
+import ResourceManager from '../components/ResourceManager'; import { bannerConfig } from '../data/resourceConfigs'; export default function Banners(){return <ResourceManager {...bannerConfig} basePath="/banners"/>}

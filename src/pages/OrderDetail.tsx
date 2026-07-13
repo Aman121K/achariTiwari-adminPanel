@@ -1,0 +1,1 @@
+import ResourceForm from '../components/ResourceForm'; import { orderConfig } from '../data/resourceConfigs'; export default function OrderDetail(){return <ResourceForm config={orderConfig} basePath="/orders"/>}

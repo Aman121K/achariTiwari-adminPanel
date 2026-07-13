@@ -1,0 +1,1 @@
+import ResourceForm from '../components/ResourceForm'; import { userConfig } from '../data/resourceConfigs'; export default function UserForm(){return <ResourceForm config={userConfig} basePath="/users"/>}

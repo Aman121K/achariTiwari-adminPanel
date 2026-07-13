@@ -1,0 +1,1 @@
+import ResourceForm from '../components/ResourceForm'; import { bannerConfig } from '../data/resourceConfigs'; export default function BannerForm(){return <ResourceForm config={bannerConfig} basePath="/banners"/>}
