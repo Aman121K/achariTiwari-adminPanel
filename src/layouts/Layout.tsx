@@ -11,6 +11,7 @@ import {
   FolderTree,
   Users,
   Star,
+  ShoppingBasket,
 } from 'lucide-react'
 import { useAuth } from '../contexts/AuthContext'
 
@@ -19,6 +20,7 @@ const navItems = [
   { to: '/products', label: 'Products', icon: Boxes },
   { to: '/categories', label: 'Categories', icon: FolderTree },
   { to: '/orders', label: 'Orders', icon: ClipboardList },
+  { to: '/carts', label: 'Abandoned carts', icon: ShoppingBasket },
   { to: '/users', label: 'Customers', icon: Users },
   { to: '/reviews', label: 'Reviews', icon: Star },
   { to: '/blogs', label: 'Blogs / SEO', icon: BookOpen },

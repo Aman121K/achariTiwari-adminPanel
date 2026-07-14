@@ -4,6 +4,7 @@ import Dashboard from './pages/Dashboard'
 import Products from './pages/Products'
 import ProductForm from './pages/ProductForm'
 import Orders from './pages/Orders'
+import Carts from './pages/Carts'
 import OrderDetail from './pages/OrderDetail'
 import Users from './pages/Users'
 import Blogs from './pages/Blogs'
@@ -43,6 +44,7 @@ function App() {
             {/* Orders */}
             <Route path="orders" element={<Orders />} />
             <Route path="orders/:id" element={<OrderDetail />} />
+            <Route path="carts" element={<Carts />} />
             
             {/* Users */}
             <Route path="users" element={<Users />} />
