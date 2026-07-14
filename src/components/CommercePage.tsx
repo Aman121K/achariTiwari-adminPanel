@@ -16,6 +16,7 @@ import {
   Truck,
 } from 'lucide-react'
 import { customers, metrics, orders, products } from '../data/mockCommerce'
+import { API_URL } from '../lib/api'
 
 type CommercePageProps = {
   title: string
@@ -355,8 +356,6 @@ const ProductEditor = () => {
 
   const handleSave = async () => {
     const token = window.localStorage.getItem('adminToken') || window.localStorage.getItem('token')
-    const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:5001/api'
-
     if (!token) {
       setSaveMessage('Product payload is ready. Add an admin token to localStorage to submit it to the backend.')
       console.log('Product payload', productPayload)
@@ -364,7 +363,7 @@ const ProductEditor = () => {
     }
 
     try {
-      const response = await fetch(`${apiUrl}/products`, {
+      const response = await fetch(`${API_URL}/products`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

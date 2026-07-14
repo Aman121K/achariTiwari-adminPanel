@@ -88,7 +88,7 @@ cp .env.example .env
 
 4. Configure environment:
 ```
-VITE_API_URL=http://localhost:5000/api
+VITE_API_URL=https://api-achar.phoneclubs.com/api
 VITE_APP_NAME=AachariTiwari Admin
 ```
 
@@ -219,7 +219,7 @@ Login flow:
 
 The admin panel communicates with the backend via REST API:
 
-- Base URL: `http://localhost:5000/api`
+- Base URL: `https://api-achar.phoneclubs.com/api`
 - Authentication: JWT tokens in `Authorization` header
 - Format: JSON
 
