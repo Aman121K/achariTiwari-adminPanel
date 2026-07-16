@@ -6,7 +6,7 @@ import { apiRequest } from '../lib/api'
 export type ResourceField = {
   key: string
   label: string
-  type?: 'text' | 'number' | 'date' | 'textarea' | 'select' | 'checkbox' | 'password' | 'media'
+  type?: 'text' | 'number' | 'date' | 'textarea' | 'richtext' | 'select' | 'checkbox' | 'password' | 'media'
   options?: Array<string | { value: string; label: string; parentValue?: string }>
   dependsOn?: string
   mediaFolder?: string
