@@ -20,6 +20,7 @@ import BlogForm from './pages/BlogForm'
 import UserForm from './pages/UserForm'
 import Categories from './pages/Categories'
 import CategoryForm from './pages/CategoryForm'
+import Subscribers from './pages/Subscribers'
 import { AuthProvider } from './contexts/AuthContext'
 import ProtectedRoute from './components/ProtectedRoute'
 
@@ -51,6 +52,7 @@ function App() {
             <Route path="users/new" element={<UserForm />} />
             <Route path="users/:id" element={<UserForm />} />
             <Route path="reviews" element={<Reviews />} />
+            <Route path="subscribers" element={<Subscribers />} />
 
             {/* Blogs */}
             <Route path="blogs" element={<Blogs />} />

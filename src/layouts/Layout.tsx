@@ -15,6 +15,7 @@ import {
   ShoppingBasket,
   Menu,
   X,
+  Mail,
 } from 'lucide-react'
 import { useAuth } from '../contexts/AuthContext'
 
@@ -26,6 +27,7 @@ const navItems = [
   { to: '/carts', label: 'Abandoned carts', icon: ShoppingBasket },
   { to: '/users', label: 'Customers', icon: Users },
   { to: '/reviews', label: 'Reviews', icon: Star },
+  { to: '/subscribers', label: 'Subscribers', icon: Mail },
   { to: '/blogs', label: 'Blogs / SEO', icon: BookOpen },
   { to: '/discounts', label: 'Discounts', icon: Tags },
   { to: '/banners', label: 'Banners', icon: Image },
