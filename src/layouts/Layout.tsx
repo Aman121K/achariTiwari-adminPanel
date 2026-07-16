@@ -16,6 +16,8 @@ import {
   Menu,
   X,
   Mail,
+  SearchCheck,
+  LogOut,
 } from 'lucide-react'
 import { useAuth } from '../contexts/AuthContext'
 
@@ -28,10 +30,11 @@ const navItems = [
   { to: '/users', label: 'Customers', icon: Users },
   { to: '/reviews', label: 'Reviews', icon: Star },
   { to: '/subscribers', label: 'Subscribers', icon: Mail },
-  { to: '/blogs', label: 'Blogs / SEO', icon: BookOpen },
+  { to: '/blogs', label: 'Blogs', icon: BookOpen },
   { to: '/discounts', label: 'Discounts', icon: Tags },
   { to: '/banners', label: 'Banners', icon: Image },
   { to: '/reports', label: 'Reports', icon: BarChart3 },
+  { to: '/seo', label: 'SEO Manager', icon: SearchCheck },
   { to: '/settings', label: 'Settings', icon: Settings },
 ]
 
@@ -60,11 +63,11 @@ const Layout = () => {
       <header className="sticky top-0 z-10 border-b border-slate-200 bg-white/90 backdrop-blur">
         <div className="flex items-center justify-between gap-3 px-4 py-3 sm:px-6 sm:py-4">
           <button onClick={()=>setMenuOpen(true)} aria-label="Open navigation" aria-expanded={menuOpen} className="grid h-11 w-11 shrink-0 place-items-center rounded-lg border border-slate-200 text-slate-800 lg:hidden"><Menu size={21}/></button>
-          <div>
+          <div className="min-w-0 flex-1">
             <p className="hidden text-xs font-bold uppercase tracking-wider text-slate-500 sm:block">Admin workspace</p>
             <h2 className="truncate text-base font-semibold text-slate-950 sm:text-lg">Store command center</h2>
           </div>
-          <button onClick={logout} className="min-h-[44px] shrink-0 rounded-lg border border-slate-200 px-3 text-sm font-semibold text-slate-700 sm:px-4"><span className="hidden sm:inline">Sign out · </span>{user?.name || 'Sign out'}</button>
+          <button onClick={logout} aria-label={`Sign out${user?.name ? ` ${user.name}` : ''}`} title="Sign out" className="grid h-11 w-11 shrink-0 place-items-center rounded-lg border border-slate-200 text-sm font-semibold text-slate-700 sm:flex sm:w-auto sm:max-w-[220px] sm:grid-cols-none sm:gap-2 sm:px-4"><LogOut size={18} className="shrink-0"/><span className="hidden truncate sm:inline">{user?.name || 'Sign out'}</span></button>
         </div>
       </header>
 

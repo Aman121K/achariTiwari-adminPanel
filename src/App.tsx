@@ -21,6 +21,7 @@ import UserForm from './pages/UserForm'
 import Categories from './pages/Categories'
 import CategoryForm from './pages/CategoryForm'
 import Subscribers from './pages/Subscribers'
+import SeoManager from './pages/SeoManager'
 import { AuthProvider } from './contexts/AuthContext'
 import ProtectedRoute from './components/ProtectedRoute'
 
@@ -73,6 +74,7 @@ function App() {
             <Route path="reports" element={<Reports />} />
             
             {/* Settings */}
+            <Route path="seo" element={<SeoManager />} />
             <Route path="settings" element={<Settings />} />
           </Route>
         </Routes>
